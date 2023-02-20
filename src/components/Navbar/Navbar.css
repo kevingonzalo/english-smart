@@ -1,0 +1,74 @@
+.navbar {
+  padding-left: 3%;
+  padding-right: 3%;
+  width: 100%;
+  box-shadow: 1px 1px 5px 1px var(--color-secundario);
+}
+.logo {
+  width: 200px;
+}
+.nav li {
+  margin: 10px;
+}
+.nav-item a {
+  border-radius: 7px;
+  font-size: 1.1rem;
+  color: var(--color-secundario);
+  font-weight: bold;
+}
+.nav-item a:hover {
+  transition: all 0.4s;
+  color: var(--color-secundario);
+  background-color: var(--color--hover);
+}
+.btn-container button:hover {
+  transition: all 0.4s;
+  color: var(--color-secundario);
+
+  background-color: var(--color--hover);
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.btn-container button {
+  font-weight: bold;
+  border-radius: 7px;
+  padding: 5px 10px;
+  color: var(--color-secundario);
+  text-decoration: none;
+  margin: 0 5px;
+  border: 1.1px solid var(--color-secundario);
+}
+.sesion-registro {
+  position: absolute;
+  top: 50vh;
+  width: 100vw;
+  height: 0vh;
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+.sesion {
+  display: none;
+}
+.sesion-active {
+  display: block;
+}
+.register {
+  display: none;
+}
+.register-active {
+  display: block;
+}
+.btnX {
+  display: none;
+}
+.bntX-active {
+  display: block;
+}
