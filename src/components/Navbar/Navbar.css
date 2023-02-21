@@ -5,6 +5,9 @@
   box-shadow: 1px 1px 5px 1px var(--color-secundario);
   position: relative;
 }
+.nav-lista {
+  z-index: 2;
+}
 .logo {
   width: 200px;
 }
@@ -46,33 +49,14 @@
   margin: 0 5px;
   border: 1.1px solid var(--color-secundario);
 }
-.sesion-registro {
-  position: absolute;
-  top: 50vh;
-  width: 100vw;
-  height: 0vh;
-  display: grid;
-  place-items: center;
-  place-content: center;
-}
-.sesion {
-  display: none;
-}
-.sesion-active {
-  display: block;
-}
-.register {
-  display: none;
-}
-.register-active {
-  display: block;
-}
+
 .btnX {
   display: none;
 }
 .bntX-active {
   display: block;
 }
+
 /* responsive desing */
 /* btn responsive */
 .btn-menu {

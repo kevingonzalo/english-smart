@@ -2,6 +2,7 @@ import Logo from "../img/logoNavbar.png";
 import InicioSesion from "./InicioSesion/InicioSesion";
 import Registro from "./Registro/Registro";
 import "./Navbar.css";
+import "./SesionRegister.css";
 import { useState } from "react";
 
 export default function Navbar() {

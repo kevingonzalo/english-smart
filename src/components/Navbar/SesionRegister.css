@@ -1,0 +1,49 @@
+.sesion-registro {
+  position: absolute;
+  top: 50vh;
+  width: 100vw;
+  background-color: red;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  z-index: 1;
+  transition: all 0.4s ease-in-out;
+}
+.sesion {
+}
+.sesion form,
+.register form {
+  display: flex;
+  flex-direction: column;
+}
+.sesion-active {
+  display: block;
+}
+.register {
+  display: none;
+}
+.register-active {
+  display: block;
+}
+.sesion-registro {
+  position: absolute;
+  top: 50vh;
+  width: 100vw;
+  height: 0vh;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  z-index: -1;
+}
+.sesion {
+  display: none;
+}
+.sesion-active {
+  display: block;
+}
+.register {
+  display: none;
+}
+.register-active {
+  display: block;
+}
