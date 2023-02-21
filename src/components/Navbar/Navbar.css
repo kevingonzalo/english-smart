@@ -3,6 +3,7 @@
   padding-right: 3%;
   width: 100%;
   box-shadow: 1px 1px 5px 1px var(--color-secundario);
+  position: relative;
 }
 .logo {
   width: 200px;
@@ -71,4 +72,57 @@
 }
 .bntX-active {
   display: block;
+}
+/* responsive desing */
+/* btn responsive */
+.btn-menu {
+  background: none;
+  border: none;
+  display: none;
+  position: absolute;
+  font-size: 1.5rem;
+  top: 30%;
+  z-index: 5;
+  color: var(--color-secundario);
+  right: 5vw;
+}
+/* nav responsive */
+
+@media (max-width: 700px) {
+  .nav-lista.active {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: grid;
+    background-color: #000000dc;
+    left: 0;
+    top: 0;
+    transition: all 0.4s;
+  }
+  .nav {
+    display: none;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s;
+  }
+  .nav.active {
+    display: flex;
+  }
+  .nav.active .nav-link {
+    color: #fff;
+  }
+  .btn-menu-activado {
+    color: #fff;
+  }
+  .btn-menu.active {
+    display: block;
+  }
+  .btn-container {
+    display: none;
+    position: absolute;
+  }
+  .btn-container.active {
+    display: block;
+  }
 }
