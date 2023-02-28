@@ -59,7 +59,7 @@ export default function Navbar() {
         <button onClick={openSesion}>Iniciar Sesión</button>
         <button onClick={openRegister}>Registrarse</button>
       </div>
-      <div className="sesion-registro">
+      <div className={`sesion-registro ${sesion || register ? "sesion-registro-acitve" : ""}`.trim()}>
         <InicioSesion sesion={sesion} />
         <Registro register={register} />
         <button onClick={closeX} className={`btnX ${sesion || register ? "bntX-active" : ""}`.trim()}>
