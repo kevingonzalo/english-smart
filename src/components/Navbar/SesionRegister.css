@@ -1,41 +1,29 @@
 .sesion-registro {
   position: absolute;
-  top: 50vh;
+  display: none;
+  top: 0vh;
   width: 100vw;
-  background-color: red;
+  height: 100vh;
+  left: 0;
   display: grid;
-  place-items: center;
   place-content: center;
+  place-items: center;
   z-index: 0;
   transition: all 0.4s ease-in-out;
 }
+.sesion-registro-acitve{
+  display: block;
+  background-color: rgba(0, 0, 0, 0.476);
+  backdrop-filter: blur(10px);
+  z-index: 5;
+}
 .sesion {
+  display:block;  
 }
 .sesion form,
 .register form {
   display: flex;
   flex-direction: column;
-}
-.sesion-active {
-  display: block;
-}
-.register {
-  display: none;
-}
-.register-active {
-  display: block;
-}
-.sesion-registro {
-  position: absolute;
-  top: 50vh;
-  width: 100vw;
-  height: 0vh;
-  display: grid;
-  place-items: center;
-  place-content: center;
-}
-.sesion {
-  display: none;
 }
 .sesion-active {
   display: block;
