@@ -1,35 +1,35 @@
-import Logo from "../img/logoNavbar.png";
-import InicioSesion from "./InicioSesion/InicioSesion";
-import Registro from "./Registro/Registro";
-import "./Navbar.css";
-import "./SesionRegister.css";
+import Logo from "./img/logoNavbar.png";
+// import InicioSesion from "./InicioSesion";
+// import Registro from "./Registro";
+import "./styles/Navbar.css";
+import "./styles/SesionRegister.css";
 import { useState } from "react";
 
-export default function Navbar() {
-  let [sesion, setOpenSesion] = useState(false);
-  let [register, setRegister] = useState(false);
+export default function Navbar({ scroll }) {
+  // let [sesion, setOpenSesion] = useState(false);
+  // let [register, setRegister] = useState(false);
   const [clicked, setClicked] = useState(false);
   // muestra boton menu hamburguesa cuando baje el ancho de la pantalla
   const activeMenu = () => {
     setClicked(!clicked);
   };
   // para abrir formulario de inicio de sesion y registro
-  const openSesion = () => {
-    activeMenu();
-    setRegister((register = false));
-    setOpenSesion(!sesion);
-  };
-  const openRegister = () => {
-    activeMenu();
-    setOpenSesion((sesion = false));
-    setRegister(!register);
-  };
-  const closeX = () => {
-    setOpenSesion((sesion = false));
-    setRegister((register = false));
-  };
+  // const openSesion = () => {
+  //   activeMenu();
+  //   setRegister((register = false));
+  //   setOpenSesion(!sesion);
+  // };
+  // const openRegister = () => {
+  //   activeMenu();
+  //   setOpenSesion((sesion = false));
+  //   setRegister(!register);
+  // };
+  // const closeX = () => {
+  //   setOpenSesion((sesion = false));
+  //   setRegister((register = false));
+  // };
   return (
-    <section className="navbar">
+    <section className={`navbar ${scroll <= -92 ? "active" : ""}`.trim()}>
       <button onClick={activeMenu} className={`btn-menu active ${clicked ? "btn-menu-activado" : ""}`}>
         <i className="fa-solid fa-bars"></i>
       </button>
@@ -55,17 +55,17 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
-      <div className={`btn-container  ${clicked ? "active" : ""}`.trim()}>
+      {/* <div className={`btn-container  ${clicked ? "active" : ""}`.trim()}>
         <button onClick={openSesion}>Iniciar Sesión</button>
         <button onClick={openRegister}>Registrarse</button>
       </div>
-      <div className={`sesion-registro ${sesion || register ? "sesion-registro-acitve" : ""}`.trim()}>
+      <div className={`sesion-registro ${sesion || register ? "active" : ""}`.trim()}>
         <InicioSesion sesion={sesion} />
         <Registro register={register} />
         <button onClick={closeX} className={`btnX ${sesion || register ? "bntX-active" : ""}`.trim()}>
           X
         </button>
-      </div>
+       </div> */}
     </section>
   );
 }

@@ -4,6 +4,17 @@
   width: 100%;
   box-shadow: 1px 1px 5px 1px var(--color-secundario);
   position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.navbar.active {
+  position: fixed;
+  z-index: 10 !important;
+  color: var(--color-principal);
+  background-color: #000000d9;
+  transition: all 0.3s ease-in-out;
+}
+.navbar.active .nav-item a {
+  color: var(--color-principal);
 }
 .nav-lista {
   z-index: 2;
@@ -54,8 +65,8 @@
 .btnX {
   display: none;
   position: absolute;
-  right: 10%;
-  top: 10%;
+  right: 3%;
+  top: 3%;
   border-radius: 50%;
   padding: 10px;
   background: none;
@@ -63,6 +74,10 @@
   font-size: 2rem;
   font-weight: bold;
   color: var(--color-principal);
+}
+.btnX:hover {
+  transition: 0.4s;
+  color: var(--color--hover);
 }
 .bntX-active {
   display: block;
@@ -76,15 +91,18 @@
   display: none;
   position: absolute;
   font-size: 1.5rem;
-  top: 30%;
+  top: 28%;
   z-index: 5;
   color: var(--color-secundario);
   right: 5vw;
 }
+.navbar.active .btn-menu {
+  color: var(--color-principal);
+}
 /* nav responsive */
 
 @media (max-width: 700px) {
-  .nav-lista.active {
+  .nav-lista {
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -92,20 +110,27 @@
     background-color: #000000dc;
     left: 0;
     top: 0;
-    transition: all 0.4s;
+    transform: translateX(-200%);
+    transition: all 0.4s ease-in-out;
+  }
+  .nav-lista.active {
+    transform: translateX(0%);
   }
   .nav {
     display: none;
     height: 500px;
     flex-direction: column;
     align-items: center;
-    transition: all 0.4s;
+    transition: all 0.4s ease-in-out;
   }
   .nav.active {
     display: flex;
   }
   .nav.active .nav-link {
     color: #fff;
+  }
+  .nav.active a {
+    font-size: 1.8rem;
   }
   .btn-menu-activado {
     color: #fff;
@@ -119,5 +144,6 @@
   }
   .btn-container.active {
     display: block;
+    transition: all 0.4s ease-in-out;
   }
 }

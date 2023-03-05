@@ -4,3 +4,13 @@ body {
   box-sizing: border-box;
   background-color: var(--color-principal);
 }
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+section {
+  margin: auto;
+  scroll-margin-top: 5rem;
+  width: 95%;
+  padding: 1rem;
+}

@@ -1,0 +1,25 @@
+.titulo-curso {
+  font-weight: bold;
+  padding: 0 10px;
+}
+.curso {
+  margin: 2rem;
+}
+.curso-container {
+  width: 95%;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.curso-container img {
+  width: 150px;
+}
+.descripcion p {
+  text-align: left;
+}
+.descripcion a {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,101 @@
+.sesion-registro {
+  position: fixed;
+  display: none;
+  top: 0vh;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  z-index: 3;
+  transition: all 0.4s ease-in-out;
+  text-align: center;
+  font-family: sans-serif;
+}
+.sesion-registro.active {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.476);
+  backdrop-filter: blur(10px);
+  z-index: 5;
+}
+.sesion-registro.active html {
+  overflow: hidden;
+}
+.sesion,
+.register {
+  display: none;
+  width: 40%;
+  margin: auto;
+  color: var(--color-principal);
+  background-color: var(--color-secundario);
+  padding: 20px;
+}
+.sesion h1,
+.register h1 {
+  padding: 10px;
+  font-size: 2rem;
+}
+.sesion.active,
+.register.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sesion form,
+.register form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.form-login input {
+  padding: 5px 10px;
+  margin: 5px 0;
+  outline: none;
+}
+.recuerdame {
+  display: flex;
+  margin: auto;
+  padding: 5px 0px;
+  align-items: center;
+}
+.recuerdame label {
+  padding: 0 5px;
+}
+.button-sesion,
+.button-register {
+  background-color: var(--color--hover);
+  border: none;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.recuperar-contraseña {
+  margin: 5px 0;
+}
+.registrarse {
+  margin: 5px 0;
+}
+
+.form-register input {
+  margin: 5px 0;
+  padding: 5px 10px;
+  outline: none;
+}
+.button-register {
+  margin: 20px 0;
+}
+.button-register:hover,
+.button-sesion:hover {
+  transition: all 0.2s;
+  opacity: 0.8;
+}
+@media (max-width: 700px) {
+  .sesion,
+  .register {
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  .sesion,
+  .register {
+    width: 90%;
+  }
+}
