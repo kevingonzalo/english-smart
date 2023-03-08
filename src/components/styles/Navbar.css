@@ -7,6 +7,9 @@
   transition: all 0.3s ease-in-out;
 }
 .navbar.active {
+  padding: 0 3%;
+  height: 60px;
+  line-height: 30px;
   position: fixed;
   z-index: 10 !important;
   color: var(--color-principal);
@@ -128,6 +131,14 @@
   }
   .nav.active .nav-link {
     color: #fff;
+    background-color: var(--color--hover);
+    padding: 5px 30px;
+    width: 100%;
+    margin: 5px 0;
+  }
+  .nav.active .nav-link:hover {
+    transition: 0.4s all;
+    transform: scale(1.1);
   }
   .nav.active a {
     font-size: 1.8rem;

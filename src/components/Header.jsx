@@ -11,8 +11,8 @@ export default function Header() {
           Contamos con contenido para aprender y ejercitar el inglés totalmente GRATIS ¿Qué estás esperando? Revisa ya
           nuestros cursos con todos los niveles de conocimiento en el inglés.
         </p>
-        <a href="#contacto" className="btn-header">
-          Inscribirme
+        <a href="#cursos" className="btn-header">
+          Ver Cursos
         </a>
       </div>
     </header>
