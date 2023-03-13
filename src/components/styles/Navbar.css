@@ -113,10 +113,12 @@
     background-color: #000000dc;
     left: 0;
     top: 0;
+    z-index: 3;
     transform: translateX(-200%);
     transition: all 0.4s ease-in-out;
   }
   .nav-lista.active {
+    z-index: 3;
     transform: translateX(0%);
   }
   .nav {

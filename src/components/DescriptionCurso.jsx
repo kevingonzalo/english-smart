@@ -4,11 +4,12 @@ export default function DescriptionCurso({ setActiveCurso, activeCurso, img, act
   };
   return (
     <section className={`descriptioncurso ${activeCurso ? "show" : ""}`.trim()}>
+      <div onClick={handleClicked} className="background"></div>
       <div className="description-curso-content">
         <button onClick={handleClicked} className="btnX-des-curso">
           x
         </button>
-        <h1 className="titulo-curso">Nivel Principiante - A1</h1>
+        <h1 className="titulo">Nivel Principiante - A1</h1>
         <div className="descptioncurso-container">
           <img src={img} className={`img-curso ${active ? "show" : ""}`.trim()} alt="" />
           <p>{description}</p>
