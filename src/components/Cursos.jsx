@@ -18,6 +18,8 @@ const Cursos = () => {
             de la semana y meses del año Las fechas, Los colores, Figuras geométricas, Las partes del cuerpo, Los
             pronombres personales, La familia, El verbo to be Cómo saludar y presentarse, Frases de cortesía, Las
             profesiones, Presente simple Presente continuo."
+          active={true}
+          description="Lo primero que se necesita saber para aprender y dominar un idioma es el abecedario, te ayudara a poder deletrear palabras y comunicarte mejor con los demás. Realmente necesitamos conocer los sonidos de las letras y conocerlas bien para poder comunicarnos de forma efectiva en inglés. Para eso dejamos aquí un video y contenido para el aprendizaje del mismo."
         />
         <div className="linea-separadora-cursos"></div>
         <Curso
@@ -25,6 +27,7 @@ const Cursos = () => {
           titulo="Nivel Elemental - A2"
           alt="Nivel Elemental - A2 logo del curso"
           parrafo="En Este Nivel Aprenderás: Adverbios de lugar, Preposiciones de lugar, Preposiciones de tiempo: for y since, Adjetivos calificativos, Adjetivos demostrativos, Adjetivos comparativos, Adjetivos de cantidad, Las partes de la casa, Vocabulario de restaurante, Hablar sobre las emociones: like y dislike, Pasado simple: verbos regulares e irregulares, Pasado continuo, Verbos auxiliares: do, does, has, have, WH Questions, Adverbios de frecuencia."
+          active={false}
         />
         <div className="linea-separadora-cursos"></div>
         <Curso
@@ -32,6 +35,7 @@ const Cursos = () => {
           titulo="Nivel Intermedio - B1"
           alt="Nivel Intermedio - B1 logo del curso"
           parrafo="En Este Nivel Aprenderás: present perfecto, Pasado perfecto, Futuro simple: will y be going to, Comparativos y superlativos, Verbos modales, Genitivo sajón, Be used to, get used to y used to, Conectores, Oración pasiva, Estilo indirecto, Preguntas indirectas, For, since, yet y still."
+          active={false}
         />
         <div className="linea-separadora-cursos"></div>
         <Curso
@@ -39,6 +43,7 @@ const Cursos = () => {
           titulo="Nivel Intermedio Alto - B2"
           alt="Nivel Intermedio Alto - B2 logo del curso"
           parrafo="En Este Nivel Aprenderás: Present continuous and perfect, Present perfect, Narrative past tenses, Future continuous and future perfect simple, Determiners, Expressions of quantity, Verb + infinitive or -ing, Verbs with both -ing and to + infinitive, Zero and first conditionals, Time linkers, Usually, used to, would, be used to and get used to, Second, third and mixed conditionals, Wish and if only, Verb patterns with reporting verbs, Passive reporting verbs, Articles: a/an, the or zero article?, Relative clauses, Could, was able to, managed to and succeeded in, Future in the past."
+          active={false}
         />
       </div>
       <div className="linea-separadora"></div>
